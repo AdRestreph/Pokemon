@@ -1,17 +1,28 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #65656595;
+    transition: all 0.8s;
 }
 
+
 .container{
-    max-width: 600px;
-    margin: 0 auto;
+    width: 95%;
+    margin: 10px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #2b2b2b;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border: 0.1px solid;
+    margin-bottom: 50px;
+    transition: all 1s;
+}
+
+.container:hover {
+    background-color: #9a3232;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.646) ;
+    cursor: pointer;
 }
 
 .card img{
@@ -19,13 +30,39 @@ body{
     border-radius: 50%;
 }
 
-.card h3{
+.card h2{
     margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.card p{
+.card h5{
     margin-top: 5px;
-    color: #666;
+    color: #ffffff00;
+    text-align: center;
+    background:  url("/pokeball.png");
+    background-size: 80px 80px;
+    background-position: -3px -3px;
+    height: 60%;
+    width: 60%;
+    background-repeat: no-repeat;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 0.1px solid #222121af;
+    padding: 10px;
+    margin-left: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);;
+    transition: 1.2s;
+}
+
+.card:hover h5{
+    background-color: #c12c2c;
+    transform: scale(0.8);
+    color: #ffff;
+    background: #bd2323;
+
 }
 
 .card{
@@ -36,9 +73,10 @@ body{
     max-width: 300px;
     margin: 5px auto;
     padding: 5px;
-    background-color: #f08d7156;
-    border-radius: 5px;
+    background-color: #ffffffe4;
+    border-radius: 10%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.8s ease;
 }
 
 .card-container{
@@ -49,3 +87,69 @@ body{
     gap: 20px;
 }
 
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
+    background-color: #222121af;
+    
+}
+
+.card:hover img{
+    cursor: pointer;
+    transform: scale(1.15);
+    color: white;
+    background:  url("/pokeball.png");
+    background-size: 162px 162px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: -3px -3px;
+    height: 60%;
+    width: 60%;
+}
+
+.container h1{
+    font-size: 70px;
+    justify-content: center;
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 1px 4px 6px rgb(255, 255, 255);
+    transition: all 0.8s;
+}
+
+.container:hover h1{
+    text-shadow: 1px 2px 6px rgb(44, 44, 44);
+}
+
+.container span{
+    color: #555555;
+    transition: all 0.8s;
+    text-shadow:0 2px 4px rgba(255, 255, 255, 01);
+}
+
+.container:hover span{
+    color: #2b2b2b;
+    text-shadow: 0 2px 4px rgba(4, 4, 4, 0.5);
+}
+
+#pokeball{
+    transition: all 0.8s;
+    filter: drop-shadow(0px 4px 8px rgb(244, 244, 244))
+    
+}
+
+#pokedex{
+    filter: drop-shadow(0px 2px 11px rgb(244, 244, 244));
+    transition: all 1.2s;
+}
+
+.container:hover #pokeball{
+    transform: rotateZ(180deg);
+    filter: drop-shadow(0px 4px 11px rgba(244, 244, 244, 0))
+}
+
+.container:hover #pokedex{
+    transform: rotateZ(45deg);
+    filter: drop-shadow(0px 4px 11px rgba(244, 244, 244, 0))
+}
