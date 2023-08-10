@@ -17,6 +17,7 @@ body{
     border: 0.1px solid;
     margin-bottom: 50px;
     transition: all 1s;
+    flex-direction: column;
 }
 
 .container:hover {

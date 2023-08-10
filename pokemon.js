@@ -1067,6 +1067,9 @@ function pokemon() {
     const pokemonType = document.createElement("h5");
     pokemonType.textContent = `TYPE: ${pokemon.type}`;
 
+    const type = pokemon.type.split(",");
+    typePokemon(pokemonType, type);
+
     pokemonCard.appendChild(pokemonImage);
     pokemonCard.appendChild(pokemonName);
     pokemonCard.appendChild(pokemonType);
@@ -1075,4 +1078,13 @@ function pokemon() {
   });
 }
 
+function typePokemon(pokemonTypeHtml, type) {
+  if (type[0] == "grass") {
+    pokemonTypeHtml.className = "grass";
+  }
+
+  if (type[0] == "poison") {
+    pokemonTypeHtml.className = "poison";
+  }
+}
 document.addEventListener("DOMContentLoaded", pokemon);
